@@ -27,13 +27,13 @@
 
           <ul class="header__nav-links list">
             <li class="header__item">
-              <a href="./index.html" class="header__link link current">Студія</a>
+              <a href="./index.html" class="header__link link link--current">Студія</a>
             </li>
             <li class="header__item">
               <a href="./portfolio.html" class="header__link link">Портфоліо</a>
             </li>
             <li class="header__item">
-              <a href="" class="link">Контакти</a>
+              <a href="" class="header__link link">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -413,26 +413,26 @@
 
     <!-- футер -->
     <footer class="footer">
-      <div class="container">
-        <div class="address-wrapper">
+      <div class="container footer__container">
+        <div class="footer__address-wrapper">
           <a class="home-link footer__home-link link" href="./index.html">Web<span class="home-link__label home-link__label--light">Studio</span></a>
 
           <address class="addresses">
-            <ul class="addresses-list list">
-              <li class="item">
+            <ul class="addresses__list list">
+              <li class="addresses__item">
                 <a
-                  class="link"
+                  class="addresses__link link"
                   href="https://goo.gl/maps/eJKqNZtGVkFTJRSV8"
                   target="_blank"
                   rel="nofollow noopener noreferrer"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li class="item">
-                <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="addresses__item">
+                <a class="addresses__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
-              <li class="item">
-                <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="addresses__item">
+                <a class="addresses__link link" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -450,7 +450,7 @@
             </li>
             <li class="social-links__item">
               <a href="" class="social-links__link social-wrapper__link" aria-label="Twitter link">
-                <svg class="social-links__icon social-wrapper__icon width="20" height="20">
+                <svg class="social-links__icon social-wrapper__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
@@ -473,12 +473,12 @@
         </div>
 
         <div class="subscribe-wrapper">
-          <p class="text">Підпишіться на розсилку</p>
+          <p class="subscribe-wrapper__text">Підпишіться на розсилку</p>
           <form class="subscribe-form">
-            <input type="email" name="email" id="footer-email" placeholder="E-mail" />
-            <button class="button--accent button">
-              <span>Підписатися</span
-              ><svg class="icon">
+            <input type="email" name="email" id="footer-email" placeholder="E-mail" class="subscribe-form__input"/>
+            <button class="subscribe-form__button button button--accent">
+              <span class="button__label">Підписатися</span
+              ><svg class="button__icon">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
