@@ -523,7 +523,7 @@ body {
     justify-content: space-between;
 }
 
-.clients-list .link {
+.clients-list__link {
     display: inline-flex;
     padding: 16px 32px;
     max-width: 170px;
@@ -533,7 +533,7 @@ body {
     transition: border-color var(--transition-duration-timing);
 }
 
-.clients-list .icon {
+.clients-list__icon {
     width: 106px;
     height: 60px;
     fill: var(--social-icon-color);
@@ -541,13 +541,13 @@ body {
     transition: fill var(--transition-duration-timing);
 }
 
-.clients-list .link:hover,
-.clients-list .link:focus {
+.clients-list__link:hover,
+.clients-list__link:focus {
     border-color: var(--accent-color);
 }
 
-.clients-list .link:hover .icon,
-.clients-list .link:focus .icon {
+.clients-list__link:hover .clients-list__icon,
+.clients-list__link:focus .clients-list__icon {
     fill: var(--accent-color);
 }
 
