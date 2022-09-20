@@ -259,7 +259,7 @@ body {
     margin-bottom: 20px;
 }
 
-.addresses .link {
+.addresses__link {
     font-style: normal;
 }
 
@@ -284,7 +284,7 @@ body {
     padding-top: 12px;
 }
 
-.footer .social-wrapper {
+.footer__social-wrapper {
     margin-right: 93px;
 }
 
@@ -368,7 +368,7 @@ body {
     text-align: center;
 }
 
-.hero .title {
+.hero__title {
     margin: 0 auto 30px;
     max-width: 696px;
 
@@ -380,7 +380,7 @@ body {
     text-transform: uppercase;
 }
 
-.hero .button {
+.hero__button {
     min-width: 216px;
     margin-right: auto;
     margin-left: auto;
