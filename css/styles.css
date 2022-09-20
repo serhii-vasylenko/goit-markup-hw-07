@@ -703,7 +703,7 @@ body {
     transition: transform var(--transition-duration-timing), opacity var(--transition-duration-timing);
 }
 
-.backdrop .close-btn {
+.modal__close-btn {
     position: absolute;
     right: 8px;
     top: 8px;
@@ -720,23 +720,23 @@ body {
     border-radius: 50%;
 }
 
-.close-btn .icon {
+.close-btn__icon {
     width: 18px;
     height: 18px;
     transition: fill var(--transition-duration-timing);
 }
 
-.close-btn:hover .icon,
-.close-btn:focus .icon {
+.close-btn:hover .close-btn__icon,
+.close-btn:focus .close-btn__icon {
     fill: var(--accent-color);
 }
 
 /* form */
-.backdrop .callback-form {
+.callback-form {
     padding: 40px;
 }
 
-.callback-form .title {
+.callback-form__title {
     margin-bottom: 12px;
 
     font-weight: 700;
@@ -746,18 +746,17 @@ body {
     letter-spacing: 0.03em;
 }
 
-.callback-form .form-field {
+.form-field {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
 
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
 }
 
-.callback-form .form-agreement {
+.form-agreement {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -768,20 +767,23 @@ body {
     letter-spacing: 0.03em;
 }
 
-.callback-form .form-field.text-area {
+.callback-form__form-field {
+    margin-bottom: 10px;
+}
+.callback-form__text-area {
     margin-bottom: 20px;
 }
 
-.callback-form .form-input {
+.form-field__input {
     width: 100%;
 }
 
-.form-field .label {
+.form-field__label {
     margin-bottom: 4px;
 }
 
-.form-field .form-input,
-.form-field .text-field {
+.form-field__input,
+.form-field__text-field {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 
@@ -790,44 +792,34 @@ body {
     transition: border-color var(--transition-duration-timing);
 }
 
-.form-field .form-input {
+.form-field__input {
     padding: 12px 12px 12px 42px;
 }
 
-.form-field:focus-within .form-input,
-.form-field:focus-within .text-field {
+.form-field:focus-within .form-field__input,
+.form-field:focus-within .form-field__text-field {
     outline-color: var(--accent-color);
     cursor: pointer;
 }
 
-.form-field .form-input:hover,
-.form-field .text-field:hover {
+.form-field__input:hover,
+.form-field__text-field:hover {
     border-color: var(--accent-color);
     outline: 1px solid var(--accent-color);
     cursor: pointer;
 }
 
-.form-field .text-field {
+.form-field__text-field {
     padding: 12px 16px;
     resize: none;
     min-height: 120px;
 }
 
-.form-field .text-field::placeholder {  
+.form-field__text-field::placeholder {  
     color: rgba(117, 117, 117, 0.5);
 }
 
-.form-agreement .link {
-    color: var(--accent-color);
-    text-decoration: underline;
-}
-
-.callback-form .button {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.form-field .icon {
+.form-field__icon {
     position: absolute;
     left: 12px;
     bottom: 11px;
@@ -839,11 +831,21 @@ body {
     transition: fill var(--transition-duration-timing);
 }
 
-:is(.form-field .form-input:focus, .form-field .form-input:hover) + .icon {
+:is(.form-field__input:focus, .form-field__input:hover) + .form-field__icon {
     fill: var(--accent-color);
 }
 
-.form-agreement .checkbox {
+.form-agreement__link {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.callback-form__button {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.form-agreement__checkbox {
     position: relative;
     transform: translateY(-1px);
     display: flex;
@@ -859,35 +861,32 @@ body {
     transition: outline var(--transition-duration-timing);
 }
 
-.form-agreement .checkbox:hover {
+.form-agreement__checkbox:hover {
     outline: 1px solid var(--third-text-color);
     cursor: pointer;
 }
 
-.form-agreement .icon {
+.form-agreement__icon {
     position: absolute;
     display: block;
     left: 0;
     top: 0;
     width: 16px;
     height: 15px;
-
-    transition: opacity var(--transition-duration-timing);
-    
 }
 
-.form-checkbox:checked + .checkbox {
+.form-agreement__form-checkbox:checked + .form-agreement__checkbox {
     background-color: #188ce8;
 }
 
-.form-checkbox:checked + .checkbox .uncheck {
+.form-agreement__form-checkbox:checked + .form-agreement__checkbox > .uncheck {
     opacity: 0;
 }
 
-:is(.form-checkbox:checked, .form-checkbox:focus) + .checkbox {
+:is(.form-agreement__form-checkbox:checked, .form-agreement__form-checkbox:focus) + .form-agreement__checkbox {
     cursor: pointer;
 }
 
-:is(.form-checkbox:checked:focus-visible, .form-checkbox:focus-visible) + .checkbox {
+:is(.form-agreement__form-checkbox:checked:focus-visible, .form-agreement__form-checkbox:focus-visible) + .form-agreement__checkbox {
     outline: 1px solid var(--third-text-color);
 }
