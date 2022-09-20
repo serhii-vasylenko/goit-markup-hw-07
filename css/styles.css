@@ -437,11 +437,11 @@ body {
     justify-content: space-between;
 }
 
-.portfolio-list .item {
+.portfolio-list__item {
     position: relative;
 }
 
-.portfolio-list .text {
+.portfolio-list__text {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -473,7 +473,7 @@ body {
     justify-content: space-between;
 }
 
-.team-list > .item {
+.team-list__item {
     flex-basis: calc((100% - 90px) / 4);
     background-color: var(--first-bg-color);
     text-align: center;
@@ -481,39 +481,39 @@ body {
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-list .description {
+.team-member__description {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.team-list .title {
+.team-member__title {
     margin-bottom: 10px;
 
     font-weight: 700;
 }
 
-.team-list .position {
+.team-member__position {
     margin-bottom: 16px;
 }
 
-.team-list .title,
-.team-list .position {
+.team-member__title,
+.team-member__position {
     font-size: 16px;
 }
 
 /* sicial links */
-.team-list .social-links {
+.team-list__social-links {
     padding-right: 32px;
     padding-left: 32px;
 }
 
-.team-list .icon {
+.team-list__icon {
     fill: var(--social-icon-color);
     transition: fill var(--transition-duration-timing);
 }
 
-.team-list .social-links .link:hover .icon,
-.team-list .social-links .link:focus .icon {
+.social-links__link:hover .team-list__icon,
+.social-links__link:focus .team-list__icon {
     fill: var(--first-bg-color);
 }
 
