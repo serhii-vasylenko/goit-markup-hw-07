@@ -396,11 +396,11 @@ body {
     justify-content: space-between;
 }
 
-.qualities-list .item {
+.qualities-list__item {
     flex-basis: calc((100% - 90px) / 4);
 }
 
-.qualities-list .title {
+.qualities-list__title {
     margin-bottom: 10px;
     text-transform: uppercase;
 
@@ -408,16 +408,16 @@ body {
     line-height: 1.14;
 }
 
-.qualities-list .text {
+.qualities-list__text {
     line-height: 1.71;
 }
 
-.qualities-list .title,
-.qualities-list .text {
+.qualities-list__title,
+.qualities-list__text {
     font-size: 14px;
 }
 
-.qualities-list .wrapper {
+.qualities-list__wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
