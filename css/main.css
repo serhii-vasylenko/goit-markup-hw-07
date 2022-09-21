@@ -51,11 +51,11 @@ body {
   color: #2196f3;
 }
 
-.qualities-list, .header__nav-links,
+.portfolio-list, .qualities-list, .header__nav-links,
 .header__contacts {
   list-style: none;
 }
-.qualities-list img, .header__nav-links img,
+.portfolio-list img, .qualities-list img, .header__nav-links img,
 .header__contacts img {
   display: block;
 }
@@ -277,4 +277,34 @@ body {
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
+}
+
+.portfolio {
+  padding-top: 0;
+}
+
+.portfolio-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-list__item {
+  position: relative;
+}
+
+.portfolio-list__text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
 }/*# sourceMappingURL=main.css.map */
