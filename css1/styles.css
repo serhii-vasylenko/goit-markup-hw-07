@@ -316,6 +316,39 @@ body {
     background-color: var(--second-bg-color);
     border-radius: 4px;
 }
+/* portfolio */
+.portfolio {
+    padding-top: 0;
+}
+
+.portfolio-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio-list__item {
+    position: relative;
+}
+
+.portfolio-list__text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: var(--secondary-text-color);
+    background: rgba(47, 48, 58, 0.8);
+}
 
 
 /* footer */
@@ -432,39 +465,6 @@ body {
 
 
 
-/* portfolio */
-.portfolio {
-    padding-top: 0;
-}
-
-.portfolio-list {
-    display: flex;
-    justify-content: space-between;
-}
-
-.portfolio-list__item {
-    position: relative;
-}
-
-.portfolio-list__text {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-
-    padding-top: 27px;
-    padding-bottom: 27px;
-    width: 100%;
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-align: center;
-
-    color: var(--secondary-text-color);
-    background: rgba(47, 48, 58, 0.8);
-}
 
 /* team */
 .team {
