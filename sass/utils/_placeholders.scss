@@ -35,6 +35,32 @@
     cursor: pointer; 
 }
 
+%button--accent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    min-height: 50px;;
+
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    color: $secondary-text-color;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    transition: background-color var(--transition-duration-timing);
+
+    &:hover {
+        background-color: $second-accent;
+    }
+    &:focus {
+        background-color: $second-accent;
+    }
+}
+
 %hidden {
     position: absolute;
     white-space: nowrap;
