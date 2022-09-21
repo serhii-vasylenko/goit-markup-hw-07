@@ -51,11 +51,11 @@ body {
   color: #2196f3;
 }
 
-.header__nav-links,
+.qualities-list, .header__nav-links,
 .header__contacts {
   list-style: none;
 }
-.header__nav-links img,
+.qualities-list img, .header__nav-links img,
 .header__contacts img {
   display: block;
 }
@@ -92,6 +92,20 @@ body {
 }
 .hero__button:focus {
   background-color: #188ce8;
+}
+
+.qualitis__title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
 }
 
 .home-link {
@@ -224,4 +238,43 @@ body {
   min-width: 216px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.qualities {
+  letter-spacing: 0.03em;
+}
+
+.qualities-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.qualities-list__item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.qualities-list__title {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.14;
+}
+
+.qualities-list__text {
+  line-height: 1.71;
+}
+
+.qualities-list__title,
+.qualities-list__text {
+  font-size: 14px;
+}
+
+.qualities-list__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
 }/*# sourceMappingURL=main.css.map */
