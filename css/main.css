@@ -44,10 +44,7 @@ body {
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.work-card__link:hover, .clients-list__link:hover, .social-wrapper__link:hover, .addresses__link:hover, .header__link:hover, .social-links__link:hover, .home-link:hover {
-  color: #2196f3;
-}
-.work-card__link:focus, .clients-list__link:focus, .social-wrapper__link:focus, .addresses__link:focus, .header__link:focus, .social-links__link:focus, .home-link:focus {
+.work-card__link:is(:hover, :focus), .clients-list__link:is(:hover, :focus), .social-wrapper__link:is(:hover, :focus), .addresses__link:is(:hover, :focus), .header__link:is(:hover, :focus), .social-links__link:is(:hover, :focus), .home-link:is(:hover, :focus) {
   color: #2196f3;
 }
 
@@ -85,12 +82,9 @@ body {
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  transition: background-color var(--transition-duration-timing);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.callback-form__button:hover, .subscribe-form__button:hover, .hero__button:hover {
-  background-color: #188ce8;
-}
-.callback-form__button:focus, .subscribe-form__button:focus, .hero__button:focus {
+.callback-form__button:is(:hover, :focus), .subscribe-form__button:is(:hover, :focus), .hero__button:is(:hover, :focus) {
   background-color: #188ce8;
 }
 
@@ -431,18 +425,16 @@ body {
   color: #afb1b8;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.clients-list__link:is(:hover, :focus) {
+  color: #2196f3;
+  border-color: #2196f3;
+}
 
 .clients-list__icon {
   width: 106px;
   height: 60px;
   fill: currentColor;
   transition: fill transition-duration-timing;
-}
-
-.clients-list__link:hover,
-.clients-list__link:focus {
-  color: #2196f3;
-  border-color: #2196f3;
 }
 
 .subscribe-form {
@@ -538,7 +530,7 @@ body {
   height: 18px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-btn:hover .close-btn__icon, .close-btn:focus .close-btn__icon {
+.close-btn:is(:hover, :focus) .close-btn__icon {
   fill: #2196f3;
 }
 
@@ -645,7 +637,7 @@ body {
   fill: #212121;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-:is(.form-field__input:focus, .form-field__input:hover) + .form-field__icon {
+.form-field__input:is(:focus, :hover) + .form-field__icon {
   fill: #2196f3;
 }
 
@@ -682,10 +674,10 @@ body {
 .form-agreement__form-checkbox:checked + .form-agreement__checkbox > .uncheck {
   opacity: 0;
 }
-:is(.form-agreement__form-checkbox:checked, .form-agreement__form-checkbox:focus) + .form-agreement__checkbox {
+.form-agreement__form-checkbox:is(:checked, :focus) + .form-agreement__checkbox {
   cursor: pointer;
 }
-:is(.form-agreement__form-checkbox:checked:focus-visible, .form-agreement__form-checkbox:focus-visible) + .form-agreement__checkbox {
+.form-agreement__form-checkbox:is(:checked:focus-visible, :focus-visible) + .form-agreement__checkbox {
   outline: 1px solid #000000;
 }
 
@@ -718,7 +710,7 @@ body {
   letter-spacing: 0.03em;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.filter-list__button:hover, .filter-list__button:focus {
+.filter-list__button:is(:hover, :focus) {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -738,7 +730,7 @@ body {
   display: block;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.work-card__link:hover, .work-card__link:focus {
+.work-card__link:is(:hover, :focus) {
   color: inherit;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -785,6 +777,6 @@ body {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-:is(.work-card__link:hover, .work-card__link:focus) .work-card__content {
+.work-card__link:is(:hover, :focus) .work-card__content {
   transform: translateY(0);
 }/*# sourceMappingURL=main.css.map */

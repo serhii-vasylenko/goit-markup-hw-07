@@ -107,7 +107,7 @@
   fill: $title-color;
   transition: fill $transition-duration-timing;
 
-  :is(.form-field__input:focus, .form-field__input:hover) + & {
+  .form-field__input:is(:focus, :hover) + & {
     fill: $accent-color;
   }
 }
@@ -158,12 +158,11 @@
     }
   }
 
-  :is(.form-agreement__form-checkbox:checked, .form-agreement__form-checkbox:focus) + & {
+  .form-agreement__form-checkbox:is(:checked, :focus) + & {
     cursor: pointer;
   }
 
-  :is(.form-agreement__form-checkbox:checked:focus-visible, .form-agreement__form-checkbox:focus-visible)
-    + & {
+  .form-agreement__form-checkbox:is(:checked:focus-visible, :focus-visible) + & {
     outline: 1px solid $third-text-color;
   }
 }
