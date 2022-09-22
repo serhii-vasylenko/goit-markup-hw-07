@@ -64,7 +64,7 @@ body {
   color: #212121;
 }
 
-.subscribe-form__button, .hero__button {
+.callback-form__button, .subscribe-form__button, .hero__button {
   border: none;
   border-radius: 4px;
   font-family: inherit;
@@ -72,7 +72,7 @@ body {
   cursor: pointer;
 }
 
-.subscribe-form__button, .hero__button {
+.callback-form__button, .subscribe-form__button, .hero__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,14 +87,14 @@ body {
   border-radius: 4px;
   transition: background-color var(--transition-duration-timing);
 }
-.subscribe-form__button:hover, .hero__button:hover {
+.callback-form__button:hover, .subscribe-form__button:hover, .hero__button:hover {
   background-color: #188ce8;
 }
-.subscribe-form__button:focus, .hero__button:focus {
+.callback-form__button:focus, .subscribe-form__button:focus, .hero__button:focus {
   background-color: #188ce8;
 }
 
-.qualitis__title {
+.form-agreement__form-checkbox, .qualitis__title {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -634,4 +634,66 @@ body {
 }
 .form-field__text-field::placeholder {
   color: rgba(117, 117, 117, 0.5);
+}
+
+.form-field__icon {
+  position: absolute;
+  left: 12px;
+  bottom: 11px;
+  width: 18px;
+  height: 18px;
+  fill: #212121;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+:is(.form-field__input:focus, .form-field__input:hover) + .form-field__icon {
+  fill: #2196f3;
+}
+
+.form-agreement__link {
+  color: #2196f3;
+  text-decoration: underline;
+}
+
+.callback-form__button {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.form-agreement__checkbox {
+  position: relative;
+  transform: translateY(-1px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-agreement__checkbox:hover {
+  outline: 1px solid #000000;
+  cursor: pointer;
+}
+.form-agreement__form-checkbox:checked + .form-agreement__checkbox {
+  background-color: #188ce8;
+}
+.form-agreement__form-checkbox:checked + .form-agreement__checkbox > .uncheck {
+  opacity: 0;
+}
+:is(.form-agreement__form-checkbox:checked, .form-agreement__form-checkbox:focus) + .form-agreement__checkbox {
+  cursor: pointer;
+}
+:is(.form-agreement__form-checkbox:checked:focus-visible, .form-agreement__form-checkbox:focus-visible) + .form-agreement__checkbox {
+  outline: 1px solid #000000;
+}
+
+.form-agreement__icon {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 15px;
 }/*# sourceMappingURL=main.css.map */
