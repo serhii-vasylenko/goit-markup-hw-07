@@ -34,9 +34,7 @@
 }
 
 .qualities-list__wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include alignmentFlex();
   min-height: 120px;
   margin-bottom: 30px;
   background-color: $second-bg-color;

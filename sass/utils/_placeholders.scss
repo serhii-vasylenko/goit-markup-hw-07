@@ -32,9 +32,7 @@
 }
 
 %button--accent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include alignmentFlex();
   min-width: 200px;
   min-height: 50px;
 

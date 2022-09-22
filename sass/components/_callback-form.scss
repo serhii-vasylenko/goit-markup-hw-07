@@ -24,9 +24,7 @@
 }
 
 .form-agreement {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include alignmentFlex();
   margin-bottom: 30px;
 
   font-size: 14px;
@@ -131,9 +129,7 @@
 .form-agreement__checkbox {
   position: relative;
   transform: translateY(-1px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include alignmentFlex();
   width: 16px;
   height: 15px;
   margin-right: 7px;

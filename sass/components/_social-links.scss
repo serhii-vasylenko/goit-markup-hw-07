@@ -6,9 +6,7 @@
 
 .social-links__link {
   @extend %link;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include alignmentFlex();
 
   width: 44px;
   height: 44px;

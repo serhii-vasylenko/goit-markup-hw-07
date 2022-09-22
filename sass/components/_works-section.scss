@@ -4,8 +4,7 @@
 
 .filter-list {
   @extend %list;
-  display: flex;
-  justify-content: center;
+  @include alignmentFlex();
   margin-bottom: 50px;
 }
 
